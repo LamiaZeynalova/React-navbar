@@ -1,0 +1,44 @@
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  ul {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+  }
+  .logo-links{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    height: 82px;
+}
+  .active {
+    color: #000 !important;
+  }
+  
+  .dropdown {
+    position: relative;
+  }
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    width: 200px;
+    transition: 0.6s;
+  }
+  
+  .dropdown-toggle {
+    border: none;
+    background-color: transparent;
+  }
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
