@@ -1,28 +1,20 @@
-import React, { useState } from 'react';
-import Form from './form';
+import React from 'react';
+import { Outlet } from 'react-router-dom';
+import './App.css';
+import Header from './layout/Header';
 
 function App() {
-  const [name, setName] = useState('');
-  const [surname, setSurname] = useState('');
-  const [info, setInfo] = useState('');
-  const [age, setAge] = useState('');
-  const [gender, setGender] = useState('');
-
   return (
-    <div>
-      <Form setName={setName} setSurname={setSurname} setInfo={setInfo} setAge={setAge} setGender={setGender} />
-      <div>
-        <p>Name: {name}</p>
-        <p>Surname: {surname}</p>
-        <p>Info: {info}</p>
-        <p>Age: {age}</p>
-        <p>Gender: {gender}</p>
-      </div>
-    </div>
+    <>
+      <Header/>
+      <Outlet/>
+    </>
+   
   );
 }
 
 export default App;
+
 
 
 
