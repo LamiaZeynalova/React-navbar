@@ -1,13 +1,11 @@
 import React from 'react'
-
-import React from 'react'
-import img from "../image/hero_bg.jpg"
-import '../layout/Header.css'
+import img from "../image/hero_bg.jpg.webp"
+import '../layout/header.css'
 
 const Home = () => {
     return (
-        <div>
-            <img className='img' src={img} alt="Heroperson" />
+        <div className='imagesection'>
+            <img className='image' src={img} alt="Heroperson" />
             <div className='text'>
                 <h2><span>We Fight</span> For</h2>
                 <h2>Your Right</h2>
